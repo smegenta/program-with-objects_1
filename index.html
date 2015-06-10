@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <meta charset="UTF-8">
+	  <link rel="stylesheet" type="text/css" href="stage1.css">
+	  <title>Sam Megenta's Note - Stage 1</title>
+	</head>
+
+	<body>
+		
+		<div>
+	    	<h1>Introduction to Programming Nanodegree</h1>
+	  	</div>
+ 		
+	  	<div class = "lesson">
+	  		<h2>Table of contents</h2>
+	  		<div class ="sub-lesson">
+	  			<div class ="sub-lesson-desc">
+	  				<p> <a href= "#Make...">Intro: Make your web page</a></p>
+					<ul>
+						<li><a href = "#Lesson1.1">The Basics of the web</a></li>
+						<li><a href = "#Lesson1.2">Creating a structured Document with HTML</a></li>
+						<li><a href = "#Lesson1.3">Adding CSS Style to HTML structure</a></li>
+					</ul>
+					<p> <a href = "#Automate...">Automate your page</a></p>
+					<ul>
+						<li><a href = "#Lesson2.0">Introduction to serious programming</a></li>
+						<li><a href = "#Lesson2.1">Variables and Strings</a></li>
+						<li><a href = "#Lesson2.2">Functions</a></li>
+						<li><a href = "#Lesson2.3">Decisions and Repetitions</a></li>
+						<li><a href = "#Lesson2.4">Structred data</a></li> 
+					</ul>
+					<p> <a href = "#Objects">Program with objects</a></p>
+					<ul>
+						<li><a href = "#Lesson3.1">Introduction to Abstraction</a></li>
+						<li><a href = "#Lesson3.2">Using Functions</a></li>
+						<li><a href = "#Lesson3.3">Using Classes</a></li>
+						<li><a href = "#Lesson3.4">Making Classes</a></li>
+						<li><a href = "#Lesson3.5">Advanced Topics</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div>
+	    	<h1><a name = "Make...">Intro: Make your web page</a></h1>
+	  	</div>
+
+	  	<div class ="lesson">
+	  		<h2><a name = "Lesson1.1">The Basics of the Web:</a></h2>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Components of the web
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> The web is comprised of the following pieces:</p>
+		  			<ul>
+		  				<li><b>Web Browser</b> - A disply program on a computer to display content.
+		  				<li><b>Servers</b> - Computers that host files.
+		  				<li><b>Http</b> - Communication protocol. 
+		  				<li><b>Internet</b> - A network of computers.
+		  			</ul>
+				</div>
+			</div>
+
+
+			<div class = "sub-lesson">
+			    	<div class = "sub-lesson-title">
+			      		HTML
+			      	</div>
+			      	<div class ="sub-lesson-desc">
+			      		<p>HTML is the heart of the web and is composed of the following parts:</p>
+			      		<ul>
+			      			<li><b>Text</b> - This is basically what gets displayed. <br>
+			      			<li><b>Markup</b> - This controls the style of the text that is diaplyed. <br>
+			      		</ul>
+			      		<p> An HTML may also contain references to other kinds of documents such as images and video. It may also contain links to other pages.</p>      
+			    	</div>
+			</div>
+			<div class = "sub-lesson">
+		    	<div class = "sub-lesson-title">
+		      		Markup
+		      	</div>
+		      	<div class ="sub-lesson-desc">
+		      		<p> A Markup element is made of an opening tag, a content and closing tags. Opening tags may have values. Some markups do not have contants and are said to be void markups. Void tags do not need closing tag. </p>
+
+		      		<p>Some example of tags:</p>
+		      		<ul>
+		      			<li><b><span class="code">&#60;a&#62;</span></b> - anchor for making links <br>
+		      			<li><b><span class="code">&#60;img&#62;</span></b> - for images and has src and alt attributes<br>
+		      			<li><b><span class="code">&#60;br&#62;</span></b> - page break<br>
+		      			<li><b><span class="code">&#60;p&#62;</span></b> - make paragraphs
+		      		</ul>
+
+		      		<p>The difference between the line break and paragraph tag is that the first one is an inline tag while the latter is a block tag. </p>
+		    	</div>
+		    </div>
+		    <div class = "sub-lesson">
+		    	<div class = "sub-lesson-title">
+		      		HTML Documents
+		      	</div>
+		      	<div class ="sub-lesson-desc">
+		      		<p> An HTML document has two parts: A head and body.</p>
+		      		<ul>
+		      			<li>The Head contains meta data about the document including the title of the document.
+		      			<li>The Body is basically where the content of the document is written.
+		      		</ul>
+		    	</div>
+	  		</div>
+		</div>
+		<div class ="lesson"> 
+	  		<h2><a name = "Lesson1.2">Creating a structured Document with HTML</a></h2>
+	  		<div class="sub-lesson">
+	  			<div class = "sub-lesson-title">
+	  				Conceptual description of a website
+	  			</div>
+	  			<div class="sub-lesson-desc">
+	  				<p>A website has a structure, a style and interactive components</p>
+		      		<ul>
+		      			<li>The structure is done using HTML language<br>
+		      			<li>The style is done using CSS language<br>
+		      			<li>The interactive part is done using Java script.
+		      			<li>Both HTML and CSS have their own Sytax and rules.
+		      			<li>The tree structure of HTML follows the DOM.
+		      		</ul>
+	    		</div>
+	    	</div>
+	    	<div class="sub-lesson">
+	    		<div class = "sub-lesson-title">
+	    			Boxing design
+	    		</div>
+	    		<div class="sub-lesson-desc">
+		      		<p> All elements of a website are in boxes. The first thing you need to do when you start converting a graphic design into a webpage is to decide the boxes that will need to be created. Afterwards you populate the boxes with content.</p>
+		      		
+		      		<p>Boxes are created with the div tag. To help add style to the boxes, include a class attribute to each box. The names should be indicative of the purpose of the box to avoid confusion lateron.</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="lesson">
+	    	<h2><a name = "Lesson1.3">Adding CSS Style to HTML structure</a></h2>
+	    	<div class="sub-lesson">
+	  			<div class = "sub-lesson-title">
+	  				What is CSS?
+	  			</div>
+	  			<div class="sub-lesson-desc">
+	  				<p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets. It is used to control the style of the HTML elements using selectors which can either be defined inside the HTML or in a separate file.</p>
+
+	  				<p>The basic advantage of CSS is that it helps us to avoid repition, which helps to make the code good and concise.</p>
+	    		</div>
+	    	</div>
+	    	<div class="sub-lesson">
+	    		<div class = "sub-lesson-title">
+	    			Code-Refine-Test
+	    		</div>
+	    		<div class="sub-lesson-desc">
+		      		<p>Whenever you write code, first start with the big picture and drill down to the details. Always look for repeated styles to avaoid repition.</p>
+
+		      		<p>After witing the code, test in different browsers, resize browser to see the effect of on your coode and fix problems you see. Repeat the steps as necessary until all issues are fixed.</p>
+
+
+	    		</div>
+	    	</div>
+	    </div>
+
+	    <div>
+	    	<h1><a name = "Automate...">Automate your page</a></h1>
+	  	</div>
+
+	  	<div class ="lesson">
+	  		<h2><a name = "Lesson2.0">Introduction to serious programming</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Introduction
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> The objective of this section is to learn the Python programming language to generate the html page for the webpage we are building. In doing so, we will lean how to make a computer do what it is best at, which is doing repititive tasks very quickly.</p>
+
+		  			<p><b>A Computer </b> - A computer is a universal machine that can be programmed to do any computation.</p>
+
+		  			<p><b>A Program </b> - A program is a sequence of steps that tells the computer what to do. There are many different languages for programming computer. One of these languages is called Python </p>
+
+		  			<p><b>Python </b> - Python is a high level programming language. Python is called interpretor becuase it interprests the program we write to a language the computer understands and executes it. </p>
+
+		  			<p> A computer program need to be unambigious so that the computer executes exactly the same thing the programmer wants it to do. Unlike human languages, which tends to be verbose, a computer program has to describe its instruction consisely. Like human languages, computer programming languages also have grammars, but unlike human languages, they have to be followed precisely.</p>
+				</div> 
+			</div>
+		</div>
+		<div class ="lesson">
+  			<h2><a name = "Lesson2.1">Variables and Strings</h2></a>
+			<div class = "sub-lesson">
+	  			<div class = "sub-lesson-title">
+	  				Variables
+	  			</div>
+	  			<div class ="sub-lesson-desc">
+	  				<p> Variables:</p>
+	  				<ul>
+	  					<li> - Have a name and hold a value.
+	  					<li> - Use an assignment statement to assign a value. 
+	  					<li> - Once defined can change their value.
+	  					<li> - In Python '=' is an assignment statement, not an equal sign.
+	  				</ul>
+				</div>
+			</div>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Strings
+		  		</div>
+
+		  		<div class ="sub-lesson-desc">
+		  			<p>Strings are a sequence of characters surrounded by quotes.</p>
+		  			<p>Strings:</p>
+		  			<ul>
+		  				<li> - Both single and double quotes can be used, as long as opening and closing quotes are the same.
+		  				<li> - Strings can be assigned to variables. 
+		  				<li> - '+' operator for stings is a concatenation operator. It concatenates two strings into a new string.
+		  				<li> - In Python '=' is an assignment statement, not an equal sign.
+		  			</ul>
+		  			<p>We can not use the '+' operators with strings and numbers , but "*" can be used and it means repeating the string as many times as specified in the operation. </p>
+
+		  			<p>Individual characters within a string can be accessed by the index [] operator. Index starts from 0. We can also have negative index numbers. When used, they mean to start at the end of the string and go to the left. </p>
+
+		  			<p>The operator <span class="code"> string[exp1:exp2] </span> is used to select a substring of a string starting at index exp1 and ending at index (exp2-1)</p>
+
+		  			<p>The find method <span class="code"> string.find(sub_string) </span> can be used to find the first occurnace of the substring in a string. By adding one more paramter <span class="code"> string.find(sub_string, position) </span>, the find method can be used to find the occurance of the sub string after the specified position of the string. This is useful when we are interested in finding multiple occurences. </p>
+				</div>
+			</div>
+		</div>
+		<div class ="lesson">
+	  		<h2><a name = "Lesson2.2">Functions</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			What are functions
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> A function is a piece of code that takes one or more inputs and produced an output. Functions are used to avoid writing repititive codes for taks that are done over and over. By defining a function once, we can re-use it multiple times. </p>
+		  		</div>
+			</div>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Defining and using functions
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Functions are defined as:</p>
+		  			<ul><span class="code">
+		  				<li> <em> def  procedure_name (input1, input2, ...) </em>
+		  				<ul>
+		  					<li><em> do something </em>
+		  					<li><em> return (output) </em>
+		  				</ul>
+		  			</span></ul>
+		  			<p> The inputs are called operands or arguments. A funtion needs to have a return statement to be useful becuase that is how it returns its output. </p>
+		  			<p> Once a function is defined, simply use the name of the function with its arguments.</p>
+		  			</ul>
+				</div>
+			</div>
+		</div>
+		<div class ="lesson">
+	  		<h2><a name = "Lesson2.3">Decisions and Repetitions</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Equality Comparisons
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> There are a number of built in functions that are used to compare numbers. These include less than (<), greater than (>), less than or equal to (<=), greater than or equal to (=>), not equal (!=), and equal(==). All of them follow the syntax
+		  		<span class="code"> <em>Expression operator Expression</em></span>. Their output is a Boolean True or False.</p>
+
+		  			<p>Note that the equality comparison == is different from the assignment operator =.</p>
+		  		</div>
+			</div>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			If Statements
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> The If statement is used to make a decision based on comparison. The syntax of an If statement is </p> <p> <span class="code"> If <em>(IfTestExp):</em> <br>
+		  		        <span class="tab">block</span></span>		  
+
+		  			<p> The <span class="code">IfTestExp</span> part is evaluated first and if true <span class="code">block</span> is executed.</p>
+				</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			OR operator
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> The OR operator is a logical construct which evalues to True if either the left ot right operand evalues to True.</p>		  
+		  			<p> The OR operator evalues only what it needs to evaluate, which means if the left operand evalues to True, it does not evaluate the right operand.</p>
+		  		</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			While Loop
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Loop is a construct that does things over and over again based on a set criteria</p>		  
+		  			<p> The While loop has theollowing syntax: 
+		  				<p> <span class="code"> While <em>(WhileTestExp):</em> <br>
+		  		        <span class="tab"> Block </span></span>		
+		  		        
+		  			<p> <span class="code">Block</span> will be executed repeatedly as long as the <span class="code"> WhileTestExp</span> is true. Exceution will exit from the loop when the <span class="code">WhileTestExp</span> evaluates to false.</p>
+				</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Break Statements
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> A Break statement is used to break in the middle of a loop</p>		  
+		  			<p> Its syntax within the While loop is: 
+					<p> <span class="code"> If <em> (BreakTestExp):</em> <br>
+		  		        <span class="tab"> break </span></span>	
+		  		</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Bugs
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Bugs are a normal part of programming. While bugs can make a program crash, those that don't crash are trickier to find and fix. Some tips to find bugs and fix are:</p>	
+		  			<ul>
+		  				<li>- Look at the Traceback error message.
+		  				<li>- Use commenting to help you identify the location.
+		  				<li>- Use print statements 
+		  				<li>- Keep old version to help you get back to previous versions.
+		  			</ul>
+		  			<p>Remember debugging - which is finding and fixing bugs - is a scientific process of examining code to discover things you did not expect in it. </p>
+		  		</div>
+			</div>	
+		</div>
+		<div class ="lesson">
+			<h2><a name = "Lesson2.4">Structred data</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Lists
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> A string is a sequence of characters while a string can be a sequence of anything. Lists can also have nested lists, which is a list inside a list.</p>
+
+		  			<p> Lists are defined by putting them in a square brackets. Elements are separated by commas. Elements of a list can be accessed by using <span class="code">list[index]</span> and this returns a string containaing the element.</p>
+
+		  			<p>An index range can also be used <span class="code">List[startindex:endIndex]</span>. This will give us a subset of the lsit which itself is a list</p>
+
+		  			<p>The two most important difference between strings and lists are mutation and aliasing</p>
+		  		</div>
+			</div>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Mutation and alisaing
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p><b>Mutation</b> - Mutation means you can change the value of a list after it has been created. Strings do not support mutation but lists do.</p>		  
+
+		  			<p><b>Aliasing</b> - When you can refer to one object in two or more ways, it is called alisaing. Strings do not support aliasing but lists do.</p>	
+				</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			List operations
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> <b>append</b> - will add an element to the end of the list. It is mutating the list it is invoked on. The syntax is <span class="code">list.append(element)</span>
+		  			<p> <b>plus</b> is similar to concatenation and creates a new list. This operator generates a new list</p>
+		  			<p> <b>len</b> - gives the number of elements in a list.</p>			  
+		  		</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Loops on lists
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Syntax:  <span class="code">  for <em> name </em> in <em> list: block</em></span></p>	
+		  			<p> This iterates through the list members. </p>	  
+		  		</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Index
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Syntax:  <span class="code"> <em>list.index(value)</span></em></p>	
+		  			<p> If the value exists, it gives the index of the value. If the value does not exist, it gives an error.</p>
+		  		</div>
+			</div>	
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			in / not in
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p>Syntax: <span class="code"> <em>(value) in list </em></span></p>	
+		  			<p>If value is found, it returns True. If not, it returns false.</p>
+		  			<p><em>not in</em> is opposite of <em>in</em></p>
+		  		</div>
+			</div>	
+		</div>
+		
+		<div>
+	    	<h1><a name = "Objects">Program with Objects</a></h1>
+	  	</div>
+
+	  	<div class ="lesson">
+	  		<h2><a name = "Lesson3.0">Introduction to Abstraction</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Introduction
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> In this section of the course we learn about Functions, Classes and Object Oriented Programming. We will do so by building three projects: Break Scheduler, Profanity Editor and Movie Database. Object Oriented Programming is a programming paradigm used by most programmers </p>
+		  		</div> 
+			</div>
+			<h2><a name = "Lesson3.1">Procedural vs. Object Oriented Programming</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Procedural Programming
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p> Procedural programming is a paradigm where a program is written explictly as a sequence of steps to be followed to produce a result. To make programming easier, a prolem is broken down into smaller logical pieces and procedures/functions are written for each piece. The procedures/functions have no intrinsic relationship with the data they operate on. Data is separate from fuctions. Examples of procedural programming languages include C and Pascal. </p>
+		  		</div> 
+			</div>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Object oriented Programming
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p>In object oriented programming, data and related functions are bundled together to form objects with the data in the objected accessed or manipulated by functions of the object. The objects are used to model real-world objects (such as a person). Objects can have relationship with other objects.(A parent object will have son objects and so on). programs are designed such that objects interact with one another. Examples of Object Oriented programming languages include Python, C++ and Java.</p>
+
+		  			<p>The first step in OOP is to identify all the objects a programmer wants to manipulate and how they relate to each other. Once an object has been identified, it is generalized as a class of objects that defines the kind of data it contains and functions(methods) that can manipulate it. Objects communicate with messages.</p>
+		  		</div> 
+			</div>
+			<h2><a name = "Lesson3.2">Using Functions</h2></a>
+			<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Abstractions
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p>Python has an extensive list of built-in fuctions that we can use by simply calling them. Since these functions are already included in Python, we do not need to define them, nor are we concerned with the details of their implementation. To use them, we only need to know what they do, their inputs and their outputs. Examples of these type of functions include string functions such as len(), split() and so on. </p>
+
+		  			<p>The ability to use functions without bothering about the details of their implementation is called <b>abstraction.</b></p>
+
+		  			<p>An example of an Abstraction is the use of CSS tags in HTML. Once a CSS tag is defined in the CSS file, we are not concerned about the definition when using it. We refernce it in the header of the HTML file and use the tags that are defined in CSS file in the body of the HTML file.</p>
+
+
+		  		</div>
+		  	</div>
+		  	<div class = "sub-lesson">
+		  		<div class = "sub-lesson-title">
+		  			Modules
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p>A module is a python file (*.py) that contains related Python statements and function definitions.</p>
+		  			<p>Python comes with several standard modules. Examples include: io module that define functions for accessing files and directories and time module provides several time related functions.</p>
+		  			<p><b>import:</b></p>
+		  				<ul>
+		  					<p>To use these fuctions in your program, you will need to first import the module. This is done by using the import statement. </p>
+		  					<p>Its syntax is: </p>
+		  					<p><span class="code">import moduleName</span></p>
+		  					<p>where moduleName is the name of the modules that defines the functions you are interested in.</p>
+		  					<p> Example: to import the time module, we will do - <span class="code">import time</span></p>
+		  				</ul>
+		  			<p><b>External Modules</b></p>
+		  				<ul>
+		  					<p>Modules that are not part of the Standard Python Library but are written by other programmers are called External modules.</p>
+		  					<p>External Modules are also be imported using the <span class="code">import</span> statement.</p>
+		  				</ul>
+		  		</div>
+		  	</div>
+		  	<div class = "sub-lesson">
+				<div class = "sub-lesson-title">
+		  			Python Documentation
+		  		</div>
+		  		<div class ="sub-lesson-desc">
+		  			<p>There is an <a href="https://docs.python.org/2/library/index.html">online Python documentation</a> that describes Python Standard Library (its built-in functions, standard modules and functions defined in them). By going to this site one can look for/ familiarize functions that are already defined in Python.</p>
+				</div>
+			</div>
+			<h2><a name = "Lesson3.3">Using Classes</h2></a>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Classes 
+				</div>
+				<div class="sub-lesson-desc">
+					Classes can be thought of as blueprints for creating objects. As we work on complex problems, we will find that the data types that are pre-defined in Python are not adequate for describing the entities (objects) we want to work with. In such cases, we define classes that will be used to create the objects. Objects are instances of the classes</p>
+
+					<p>For example, if our program is about drawing square, we need a square object. To create a square object, we first create a square class and use it to create the square objects.</p>
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Creating instances
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Instances of a class (objects) are creating by initialiing the object using the <span class="code">__init__()</span> function. The init function, though, is not directly called. Objects are initialized using the class names. Doing so indirectly calls the the <span class="code">__init__() </span> function to initialize the object.</p>
+
+					<p>Example: Objects for the turtle and TwilioRestClient (from the video lectures) are created with the following statements respectively.</p>
+					<p><span class="code">angie = turtle.Turtle()<br>
+					client = rest.TwilioRestClient()</p></span>
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Working with objects
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Once an object (an instance of a class) has been created, we use it with the functions that are valid for that class.</p> 
+
+					<p>Example: With the angie and client objects, we can now do: </p>
+					<p><span class="code">angie.forward(100) <br>
+					client.smc()</p></span>
+					<p>where <span class="code">forward</span> and <span class="code">sms</span> are functions defined in the <span class="code">turtle</span> and <span class="code">TwilioRestClient</span> classes respectively.</p>
+				</div>
+			</div>
+			<h2><a name = "Lesson3.4">Making Classes</h2></a>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Defining Classes 
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Classes are defined using the <span class="code">class</span> statement followed by the name of the class. Use upper case letter for the first letter of the class name. (Google Python Style Guide) </p>
+
+					<p>The attributes of a class are its data members which describe (model) what the class (and its instances) need to remember and its methods, which are functions that are defined inside the class and model what things the class needs to do.</p>
+
+					<p>Class methods are defined just like other functions except that the first argument method is <em>self</em>. 
+
+					</p> Within the class definition, we use <span class="code">self</span> to refer to the instance of a class.
+
+					<p>Example of a class:</p>
+
+					<span class="code">
+						class Movie ():<br>
+						<span class="tab">def __init__ (self, movie_title, movie_storyline, poster_image, trailer_youtube):<br>
+        				<span class="dtab">self.storyline = movie_storyline<br>
+        				<span class="dtab">self.poster_image_url = poster_image<br>
+        				<span class="dtab">self.trailer_youtube_url = trailer_youtube<br>
+        				<span class="tab">def show_trailer(self):<br>
+        				<span class="dtab">webbrowser.open(self.trailer_youtube_url)</span>
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					__init__()
+				</div>
+				<div class="sub-lesson-desc">
+						
+					<p>__Init__ () is a special method in Python. It is also called <em>constructor</em> and is called when we create a new instance of a class. The double underscore before and after the name is used to tell that it is a special reserved word.
+
+					<p>When we create an instance of a class, its init method is called, which creates/reserves spaces in memory for the class instnace and it intiatlizes the members of the instance with default/given values.</p>
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Google Python Style Guide
+				</div>
+				<div class="sub-lesson-desc">
+						
+					<p>Google Provides a <a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Naming"> convention </a> for Python programmers to follow when wrtiting their code. The convention covers an extensive area of programming and it is good to follow the styling guide.</p>
+				</div>
+			</div>
+			<h2><a name = "Lesson3.5">Advanced Topics</h2></a>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Instance vs. Class variables 
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Class variables are defined outside of the methods of the class and can be directly referenced from the class. Class variables can be useful for constants that will need to be used by all instances of the class, or that are meant to be accessed directly from the class. A good example is the movie ratings of the Movie class we saw during the vide lecture.</p> 
+
+					<p>Instance variables are defined inside __init__ (), and they are local to an instance.</p>
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Pre-existing Class variables 
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Python comes with pre-existing variables for classes. Some of them are:
+					
+					<p>__doc__: When we define a class we can also write the documentation for them in the body of the class definition as a string surrounded by three double quotes.</p> 
+					<p>__module__: This is the name of the module in which the class is defined. </p>
+
+					<p>__name__: Every Python module/program has a variable defined called __name__ which is set to '__main__' when the program is run by itself. If it is imported to another program, it is set to the name of the module
+				</div>
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Inheritance 
+				</div>
+				<div class="sub-lesson-desc">
+					<p>Inheritance is used to indicate that one class will get most or all of its features from another parent class. if you define a class as </p>
+
+					<p><span class="code"> class Child(Parent)</span></p>
+
+					<p> It means the class Child will inherit from class Parent</p>
+
+					<p> When the constructor for the child class is invoked, it in turn will invoke the constructor of the parent class. The members of the child class that are already defined in the parent class get initialized by the parent constructor. Then members of the class that are not initialized by the prent class constructor will be initialized by the child class constructor.</p>
+				</p>
+				</div> 
+			</div>
+			<div class ="sub-lesson">
+				<div class="sub-lesson-title">
+					Method Overriding 
+				</div>
+				<div class="sub-lesson-desc">
+					<p>In Inheritance, Child classes not only inherit the variables of the parent class but it also inherits the parent's methods. So even if a method is not explicitly defined in a child class, as long as it is defined in the parent class, it can be called from instances of the child class.</p>
+
+					<p>A method that is defined in a parent class can also be re-defined in the child class. This is usually done when the Child class implements the method in a different way. In this case when an instance of the parent class call the method, the version defined in the parent class will be executed, while if an instance of the child class calls the method, the version defined in the Child class will be called.</p>
+
+					<p>This property of redifing the method of a parent class in a child class us called <em>method overriding.</em></p>
+				</p>
+				</div> 
+			</div>
+		</div>
+	</body>
+</html>
+
